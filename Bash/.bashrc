@@ -117,7 +117,8 @@ if ! shopt -oq posix; then
 fi
 
 # custom erx
-source ~/.erxrc/alias
-source ~/.erxrc/programming
+cd ~/.erxrc
+source <(cat *)
+cd ~
 
 neofetch --ascii_distro Windows
