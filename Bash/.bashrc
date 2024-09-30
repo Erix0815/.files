@@ -121,4 +121,5 @@ cd ~/.erxrc
 source <(cat *)
 cd ~
 
-neofetch --ascii_distro Windows
+fastfetch -l windows
+. "$HOME/.cargo/env"
