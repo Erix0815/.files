@@ -3,3 +3,5 @@ alias q="exit"
 alias cls="clear"
 alias ll="ls -lF"
 alias la="ls -laF"
+
+alias bonsai="cbonsai -M7 -L30 -W1 -c\"&,@,§,$,%\""

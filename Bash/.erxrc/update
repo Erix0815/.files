@@ -1,0 +1,12 @@
+#!/bin/bash
+file=/etc/apt/sources.list.d/nala-sources.list
+if [ ! -e $file ]; then sudo touch -d"@0" $file; fi;
+if [ $(date -r $file +%Y%U) != $(date +%Y%U) ]; then
+	sudo nala clean --fetch --lists;
+	sudo nala fetch --ubuntu jammy --auto --fetches 4 -c DE -c AT -c CH;
+fi;
+this=~/.erxrc/update
+if [ $(date -r $this +%Y%j) != $(date +%Y%j) ]; then
+	touch $this;
+	sudo nala upgrade -y;
+fi;

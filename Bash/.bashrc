@@ -122,4 +122,3 @@ source <(cat *)
 cd ~
 
 fastfetch -l windows
-. "$HOME/.cargo/env"
