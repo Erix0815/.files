@@ -6,6 +6,7 @@ set mouse
 set nohelp
 set positionlog
 set quickblank
+set regexp
 set softwrap
 set tabsize 2
 set trimblanks
