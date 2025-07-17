@@ -1,6 +1,6 @@
 # custom erx
 cd ~/.erxrc
 source <(cat *)
-cd ~
+cd -
 clear
 fastfetch -l windows
