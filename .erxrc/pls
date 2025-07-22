@@ -1,0 +1,10 @@
+#!/bin/bash
+pls(){                     # execute commands with force, if user asks nicely
+	if sudo -v; then         # validate, that user knows the pw
+		local cmd=$*;          # get cmd from arguments
+		if [ -z "$cmd" ]; then # alternatively get from history
+			local cmd=$(history 2 | head -n1 | cut -c8-);
+		fi;
+		sudo -- $cmd;          # execute cmd, because user asked nicely
+	fi;
+}

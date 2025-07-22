@@ -1,0 +1,23 @@
+set atblanks
+set autoindent
+set indicator
+set linenumbers
+set mouse
+set nohelp
+set positionlog
+set quickblank
+set regexp
+set softwrap
+set tabsize 2
+set trimblanks
+set zap
+
+set titlecolor bold,white,gray
+set statuscolor bold,italic,white,black
+set errorcolor bold,italic,red,black
+set numbercolor bold,white,gray
+set selectedcolor white,cyan
+set scrollercolor white,gray
+set spotlightcolor italic,white,cyan
+
+bind M-h nohelp main
